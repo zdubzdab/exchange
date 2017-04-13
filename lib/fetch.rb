@@ -29,7 +29,6 @@ class Fetch
     else
       instance_save = Save.new
       instance_save.save_to_db(csv)
-      p instance_save.save_to_db(csv)
     end
   end
 end
