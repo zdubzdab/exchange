@@ -31,5 +31,16 @@ RSpec.describe Exchanger do
       end
       #Should see on the screen message "Course of the typed date is absent on the site"
     end
+    
+    it "return desired message if date is in wrong data type" do
+      begin
+        money = Exchanger.new
+        message = money.exchange(10, (3999-07-14))
+      rescue SystemExit=>e
+        expect(e.status).to eq(0)
+      end
+      #Should see on the screen message "Date should be string or created with Date class"
+    end
+
   end
 end

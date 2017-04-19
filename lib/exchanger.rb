@@ -28,8 +28,11 @@ class Exchanger
     store = storing_class.new('courses.yml')
     if date.kind_of?(String)
       store.find_by_date(date)
-    else
+    elsif date.kind_of?(Date)
       store.find_by_date(date.strftime('%Y-' '%m-' '%d'))
+    else
+      p 'Date should be string or created with Date class'
+      exit
     end
   end
 
@@ -48,8 +51,11 @@ class Exchanger
   def convert_date_to_desired_format(date)
     if date.kind_of?(String)
       date
-    else
+    elsif date.kind_of?(Date)
       date.strftime('%Y-' '%m-' '%d')
+    else
+      p 'Date should be string or created with Date class'
+      exit
     end
   end
 end

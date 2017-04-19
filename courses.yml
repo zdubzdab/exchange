@@ -2659,3 +2659,63 @@
   time_period: '2000-03-02'
   obs_value: '0.9725'
   id: 266
+267: !ruby/object:Course
+  key: EXR.D.USD.EUR.SP00.A
+  freq: D
+  currency: USD
+  currency_denom: EUR
+  exr_type: SP00
+  exr_suffix: A
+  time_period: '2017-04-12'
+  obs_value: '1.0605'
+  id: 267
+268: !ruby/object:Course
+  key: EXR.D.USD.EUR.SP00.A
+  freq: D
+  currency: USD
+  currency_denom: EUR
+  exr_type: SP00
+  exr_suffix: A
+  time_period: '2017-01-12'
+  obs_value: '1.0679'
+  id: 268
+269: !ruby/object:Course
+  key: EXR.D.USD.EUR.SP00.A
+  freq: D
+  currency: USD
+  currency_denom: EUR
+  exr_type: SP00
+  exr_suffix: A
+  time_period: '2017-04-11'
+  obs_value: '1.0616'
+  id: 269
+270: !ruby/object:Course
+  key: EXR.D.USD.EUR.SP00.A
+  freq: D
+  currency: USD
+  currency_denom: EUR
+  exr_type: SP00
+  exr_suffix: A
+  time_period: '2017-04-12'
+  obs_value: '1.0605'
+  id: 270
+271: !ruby/object:Course
+  key: EXR.D.USD.EUR.SP00.A
+  freq: D
+  currency: USD
+  currency_denom: EUR
+  exr_type: SP00
+  exr_suffix: A
+  time_period: '2017-01-12'
+  obs_value: '1.0679'
+  id: 271
+272: !ruby/object:Course
+  key: EXR.D.USD.EUR.SP00.A
+  freq: D
+  currency: USD
+  currency_denom: EUR
+  exr_type: SP00
+  exr_suffix: A
+  time_period: '2017-04-11'
+  obs_value: '1.0616'
+  id: 272
