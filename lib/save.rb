@@ -2,9 +2,9 @@ require './lib/course'
 require './lib/course_store'
 
 class Save
-  def save_to_db(csv)
+  def save_to_db(csv, course_class = Course, storing_class = CourseStore)
     csv.each do |row|
-      course = Course.new
+      course = course_class.new
       course.key = row['KEY']
       course.freq = row['FREQ']
       course.currency = row['CURRENCY']
@@ -14,7 +14,7 @@ class Save
       course.time_period = row['TIME_PERIOD']
       course.obs_value = row['OBS_VALUE']
 
-      store = CourseStore.new('courses.yml')
+      store = storing_class.new('courses.yml')
       store.save(course)
     end
   end

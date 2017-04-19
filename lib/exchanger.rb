@@ -24,8 +24,8 @@ class Exchanger
     end
   end
 
-  def get_course_from_db(date)
-    store = CourseStore.new('courses.yml')
+  def get_course_from_db(date, storing_class = CourseStore)
+    store = storing_class.new('courses.yml')
     if date.kind_of?(String)
       store.find_by_date(date)
     else
@@ -33,8 +33,8 @@ class Exchanger
     end
   end
 
-  def get_course_from_site(date)
-    instance_fetch = Fetch.new
+  def get_course_from_site(date, fetching_class = Fetch)
+    instance_fetch = fetching_class.new
     instance_fetch.fetch(create_url(date))
     get_course(date)
   end

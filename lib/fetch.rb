@@ -22,12 +22,12 @@ class Fetch
 
   private
 
-  def check_if_date_exist_in_site(csv)
+  def check_if_date_exist_in_site(csv, saving_class = Save)
     if csv.first == nil
       p 'Course of the typed date is absent on the site'
       exit
     else
-      instance_save = Save.new
+      instance_save = saving_class.new
       instance_save.save_to_db(csv)
     end
   end
