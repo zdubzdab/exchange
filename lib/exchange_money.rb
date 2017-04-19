@@ -10,8 +10,8 @@ require 'date'
 
 # 2.If you want to exchange money you should uncomment two strings below and 
 # type ruby lib/exchange_money.rb
-money = Exchanger.new
-money.exchange(10, '2000-03-02')
+# money = Exchanger.new
+# money.exchange(10, '2002-03-02')
 # Typed date should be string or created with Date class for example:
 # (Date.today-1), '2000-06-22'
 # If the course is absent in the db program will fetch it from the site.
